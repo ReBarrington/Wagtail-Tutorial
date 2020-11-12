@@ -17,3 +17,8 @@
     - `python manage.py makemigrations`
     - `python.manage.py migrate`
 - in /admin create a new child page. `news page` should be listed, with a title, intro, and body!
+
+## Wagtail API v2
+- add `wagtail.api.v2` to INSTALLED_APPS in `settings > base.py`
+- configure endpoints/views
+    - in the same folder as `urls.py` (backend folder) create a new file called `api.py`
