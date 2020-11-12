@@ -22,3 +22,6 @@
 - add `wagtail.api.v2` to INSTALLED_APPS in `settings > base.py`
 - configure endpoints/views
     - in the same folder as `urls.py` (backend folder) create a new file called `api.py`
+    - copy and paste setup from doc
+- Regiseter the URLS so Django can route requests into the API:
+    - in `urls.py` add `path('api/v2/', api_router.urls),` to URL_PATTERNS
