@@ -25,3 +25,15 @@
     - copy and paste setup from doc
 - Regiseter the URLS so Django can route requests into the API:
     - in `urls.py` add `path('api/v2/', api_router.urls),` to URL_PATTERNS
+- add an api_fields list to `news > models.py`
+- `http://localhost:8000/api/v2/pages/` shows pages API
+
+## Integration
+- axios.get('/api-of-backend') in frontend
+- for every article in articles {}
+- `news.NewsPage&fields=intro,body` specifies fields in api
+- to avoid CORS error in developement: 
+    - `pip install django-cors-headers`
+    - `corsheaders` in base.py INSTALLED_APPS
+    - add middleware
+    - `CORS_ORIGIN_ALLOW_ALL = True` in base.py 
